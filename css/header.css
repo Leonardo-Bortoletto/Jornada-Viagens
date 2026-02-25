@@ -1,0 +1,87 @@
+header {
+  background-color: var(--background-tertiary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 38px 48px;
+  position: relative;
+}
+
+.logo {
+  width: 68px;
+  height: 64px;
+  display: inline-block;
+}
+
+.logo-mobile {
+  display: block;
+}
+
+.logo-desktop {
+  display: none;
+}
+
+.navegacao {
+  margin-top: 24px;
+}
+
+input[type="checkbox"]:checked ~ nav {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-tertiary-color);
+}
+
+nav {
+  display: none;
+}
+.list-links li a {
+  color: var(--text-secundary-color);
+  text-decoration: none;
+  font-weight: var(--menu-text-weight);
+  font-size: 24px;
+}
+
+.list-links li {
+  margin: 16px 0;
+}
+
+.list-links {
+  list-style: none;
+}
+
+nav ul {
+  padding-left: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .navegacao {
+    margin-top: 0;
+    width: 467px;
+    font-size: 24px;
+  }
+  .navegacao label {
+    display: none;
+  }
+  .navegacao nav {
+    display: block;
+  }
+  .navegacao ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo-desktop {
+    display: block;
+    
+  }
+  .logo-mobile {
+    display: none;
+  }
+}
