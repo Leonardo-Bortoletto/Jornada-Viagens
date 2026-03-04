@@ -28,6 +28,31 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   font-family: "montserrat";
+  color: var(--text-primary-color);
+}
+.section-tittle {
+  text-align: center;
+}
+.section-tittle h2 {
+  font-size: 28px;
+  font-weight: var(--titles-weight);
+  margin: 0;
+}
+
+.section-tittle hr {
+  width: 180px;
+  height: 5px;
+  background-color: var(--secundary-color);
+  margin: 16px auto 32px;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .section-tittle h2 {
+    font-size: 32px;
+    font-weight: var(--titles-weight);
+    margin: 0;
+  }
 }
