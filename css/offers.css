@@ -1,0 +1,113 @@
+.offers-cards {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  color: var(--text-secundary-color);
+  padding: 24px 16px;
+  width: 312px;
+  height: 288px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  text-align: center;
+  background: url(../img/card-japao-mobile.png) center / cover no-repeat;
+}
+
+.card header {
+  display: block;
+  position: static;
+}
+
+.card header p {
+  font-size: 20px;
+  font-weight: var(--text-weight);
+  margin-bottom: 8px;
+}
+
+.card header h2 {
+  font-size: 40px;
+  font-weight: var(--titles-weight);
+}
+
+.button {
+  background-color: var(--secundary-color);
+  text-decoration: none;
+  color: var(--text-secundary-color);
+  border-radius: 8px;
+  width: 280px;
+  height: 64px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: var(--titles-weight);
+  margin-top: 24px;
+}
+
+.price {
+  display: block;
+  font-size: 32px;
+  margin-top: 24px;
+}
+
+.card-1 {
+  background: url(../img/card-sanandreas-mobile.jpg) center / cover no-repeat;
+}
+
+.card-2 {
+  background: url(../img/card-paraiba-mobile.jpg) center / cover no-repeat;
+}
+
+.card-3 {
+  background: url(../img/card-manaus-mobile.png) center / cover no-repeat;
+}
+
+@media (min-width: 768px) {
+  .offers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding: 0 60px;
+  }
+  .section-tittle {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding: 0 60px;
+  }
+
+  .card {
+    width: 440px;
+    height: 308px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    padding: 0 120px;
+  }
+
+  .card {
+    width: 588px;
+    height: 308px;
+  }
+}

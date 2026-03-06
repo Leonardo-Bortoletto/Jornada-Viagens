@@ -38,7 +38,7 @@ body {
 .section-tittle h2 {
   font-size: 28px;
   font-weight: var(--titles-weight);
-  margin: 0;
+  
 }
 
 .section-tittle hr {
