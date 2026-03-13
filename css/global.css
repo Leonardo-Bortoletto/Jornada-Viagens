@@ -34,11 +34,16 @@ body {
 }
 .section-tittle {
   text-align: center;
+  padding-top: 80px;
 }
 .section-tittle h2 {
   font-size: 28px;
   font-weight: var(--titles-weight);
   
+}
+
+.break-mobile {
+  display: block;
 }
 
 .section-tittle hr {
@@ -50,6 +55,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .break-mobile {
+    display: none;
+  }
+
   .section-tittle h2 {
     font-size: 32px;
     font-weight: var(--titles-weight);
