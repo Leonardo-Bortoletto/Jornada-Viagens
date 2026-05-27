@@ -1,0 +1,124 @@
+.rodape {
+  margin: 88px auto;
+  margin-bottom: 0;
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/rodape-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.site-footer {
+  background-color: var(--background-tertiary-color);
+}
+
+.sobre-footer {
+  background-color: var(--background-tertiary-color);
+}
+
+.sobre-footer p {
+  color: var(--text-secundary-color);
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.horario-func {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.horario-func p {
+  text-align: center;
+}
+
+.logo-footer {
+  display: flex;
+  margin: 0 auto;
+  padding: 16px 0;
+}
+
+.socials-footer {
+  background-color: var(--background-tertiary-color);
+}
+
+.socials-footer .social-media p {
+  color: var(--text-secundary-color);
+  text-align: center;
+  padding-top: 32px;
+}
+
+.socials-footer .social-media .social-logo img {
+  margin-top: 16px;
+  width: 32px;
+  height: 32px;
+}
+
+.social-logo {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .rodape {
+    background-image: url(../img/rodape-tablet.png);
+  }
+
+  .sobre-footer p {
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 16px;
+  }
+
+  .horario-func {
+    max-width: none;
+    padding: 0 40px;
+  }
+
+  .socials-footer p {
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .rodape {
+    background-image: url(../img/rodape-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+  }
+
+  .logo-footer {
+    margin: 0 0;
+  }
+
+  .sobre-footer {
+    padding: 52px 0 120px 52px;
+    max-width: 800px;
+    
+  }
+
+  .horario-func {
+    margin: 0;
+    padding: 0;
+    max-width: none;
+  }
+
+  .horario-func p {
+    text-align: start;
+  }
+
+  .site-footer{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .socials-footer{
+    padding-right: 120px;
+    padding-top: 52px;
+    padding-bottom: 52px;
+  }
+}
